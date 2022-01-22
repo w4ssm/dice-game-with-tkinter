@@ -142,8 +142,8 @@ def login():
   global screen2
   screen2 = Toplevel(screen)
   screen2.title("Login")
-  screen2.geometry("300x250")
-  Label(screen2, text = "Please enter details below to login").pack()
+  screen2.geometry("600x350")
+  Label(screen2, text = "Please enter details below to login (be aware that it is case sensitive for username AND password)").pack()
   Label(screen2, text = "").pack()
 
   global username_verify

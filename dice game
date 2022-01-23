@@ -2,17 +2,18 @@ from tkinter import *
 import random
 import os
     
+#this is the instructions
 def instructions():
     noot=Tk()
     noot.geometry("700x450")
     noot.title("Instructions")
     text= Text(noot)
-    text.insert(INSERT, "So it's pretty simple. Just roll the dice lol (can this really be classed as a game?)")
+    text.insert(END, "So it's pretty simple. Just roll the dice lol (can this really be classed as a game?)")
     text.pack()
     
     
     
-
+#this is the start menu where u get to pick instructions or start game
 def main_menu():
     
     boot=Tk()
@@ -28,7 +29,7 @@ def main_menu():
     
     
 
-
+#This is the actual game itself
 def game():
 
     root=Tk()
@@ -57,7 +58,7 @@ def delete3():
 def delete4():
   screen5.destroy()
   
-
+#This is the Username and Password System
 def password_not_recognised():
   global screen4
   screen4 = Toplevel(screen)
@@ -179,6 +180,7 @@ def login_sucess():
   screen.destroy()
   main_menu()
   
+#This is the login screen
 def main_screen():
   global screen
   screen = Tk()
